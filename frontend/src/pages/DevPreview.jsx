@@ -1,5 +1,5 @@
 import { GridFileDisplay } from "@components/FileDisplay/FileDisplay";
-import CenterBlock from "@layouts/CenterBlock/CenterBlock";
+import { CenterBlock } from "@pages/Layouts";
 
 const Preview = () => {
   return (
