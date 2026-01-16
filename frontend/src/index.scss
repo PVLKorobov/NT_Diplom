@@ -1,4 +1,27 @@
+@use "./const.scss" as const;
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
 body {
     padding: 0px;
     margin: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: const.getColor(secondary, 0);
+    color: const.getColor(primary, 0);
+    scrollbar-gutter: stable;
+}
+
+button {
+    font-family: inherit;
+}
+
+* {
+    box-sizing: border-box;
 }

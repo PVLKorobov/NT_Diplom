@@ -1,0 +1,26 @@
+@use "../../const.scss" as const;
+
+
+.banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 4vw;
+
+    &__text-wrapper {
+        text-align: left;
+    }
+
+    &__login-buttons {
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-container {
+            height: 60px;
+            margin: 0px 30px;
+        }
+    }
+}

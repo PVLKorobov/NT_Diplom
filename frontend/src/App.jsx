@@ -1,13 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.scss";
 
-import Preview from "@pages/DevPreview";
+import { HomePage } from "./pages/HomePage/Home";
 
 function App() {
   return (
     <Routes>
-      <Route path="/dev" element={<Preview />} />
-      <Route path="/" element={<div>test</div>} />
+      <Route path="/" element={<HomePage />} />
     </Routes>
   );
 }

@@ -1,0 +1,33 @@
+@use "../../const.scss" as const;
+
+.card {
+    margin: 10px;
+    border: 1px solid const.getColor(primary, 1);
+
+    &__contents {
+        padding: 5px;    
+        background-color: const.getColor(secondary, -1);
+    }
+
+    &__image {
+        &-top {
+            border: 1px solid const.getColor(primary, 1);
+            border-bottom: none;
+        }
+
+        &-bottom {
+            border: 1px solid const.getColor(primary, 1);
+            border-top: none;
+        }
+
+        &-left {
+            border: 1px solid const.getColor(primary, 1);
+            border-right: none;
+        }
+
+        &-right {
+            border: 1px solid const.getColor(primary, 1);
+            border-left: none;
+        }
+    }
+}
